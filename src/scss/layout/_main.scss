@@ -1,0 +1,63 @@
+@use '../base/variables' as v;
+
+
+
+.recipe {
+    background-color: v.$White;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin: 2rem 1rem;
+    max-width: 60rem;
+
+    .header, .instructions {
+        border-bottom: 1px solid v.$LightGrey;
+        padding-bottom: 2rem;
+
+        .header__img {border-radius: 1rem;}
+        .header__title {
+            margin: 2rem 0 1rem 0;
+            color: v.$DarkCharcoal;
+        }
+    }
+}
+
+.preparation {
+    background-color: v.$RoseWhite;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem 0;
+
+    .preparation__title {
+        color: v.$DarkRaspberry;
+        font-weight: bold;
+    }
+
+
+    .preparation__list {
+        li::marker {color: v.$DarkRaspberry;}
+    }
+}
+
+
+.footer {
+
+    .table {
+        width: 100%;
+        font-size: 1.4rem;
+        border-collapse: collapse;
+        margin: 2rem 0;
+
+        td {
+            border-bottom: 1px solid v.$LightGrey;
+            padding: 1rem 0;
+            
+            p {margin-left: 3rem;}
+        }
+        
+        td.no-border {
+            border-bottom: none;
+        }
+       
+    }
+}
+

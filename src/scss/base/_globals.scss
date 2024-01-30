@@ -1,0 +1,43 @@
+@use 'variables' as v;
+// Globals 
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: v.$Eggshell;
+    font-family: v.$fontPrimary;
+    color: v.$WengeBrown;
+    font-size: 1.6rem;
+}
+
+h1, h2 {
+    font-family: v.$fontSecondary;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
+
+
+ul li,
+ol li {
+    margin: 1rem 0;
+    &::marker {
+        font-weight: bold;
+        color: v.$Nutmeg;}
+}
+
+ul, ol {
+    li p {margin-left: 2rem;}
+}
+
+// Utilities 
+
+.bold {font-weight: bold;}
+
+.brown {color: v.$Nutmeg;}
+

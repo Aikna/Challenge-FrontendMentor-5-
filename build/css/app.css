@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+  font-size: 1.6rem;
+}
+
+h1, h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+ul li,
+ol li {
+  margin: 1rem 0;
+}
+ul li::marker,
+ol li::marker {
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+}
+
+ul li p, ol li p {
+  margin-left: 2rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.brown {
+  color: hsl(14, 45%, 36%);
+}
+
+.recipe {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  margin: 2rem 1rem;
+  max-width: 60rem;
+}
+.recipe .header, .recipe .instructions {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-bottom: 2rem;
+}
+.recipe .header .header__img, .recipe .instructions .header__img {
+  border-radius: 1rem;
+}
+.recipe .header .header__title, .recipe .instructions .header__title {
+  margin: 2rem 0 1rem 0;
+  color: hsl(24, 5%, 18%);
+}
+
+.preparation {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+.preparation .preparation__title {
+  color: hsl(332, 51%, 32%);
+  font-weight: bold;
+}
+.preparation .preparation__list li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.footer .table {
+  width: 100%;
+  font-size: 1.4rem;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+.footer .table td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 1rem 0;
+}
+.footer .table td p {
+  margin-left: 3rem;
+}
+.footer .table td.no-border {
+  border-bottom: none;
+}
+
+/*# sourceMappingURL=app.css.map */
